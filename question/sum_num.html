@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+
+<script>
+    var sum_num = 0;
+
+    function sum(){
+        var num = prompt("더하고자 하는 수를 입력하세요.");
+
+        if(num != null && num != ''){
+            sum_num = parseInt(sum_num) + parseInt(num);
+            sum();
+        }
+    }
+    
+    sum();
+    alert("입력하신 숫자의 총합은 " + sum_num + "입니다.");
+</script>
