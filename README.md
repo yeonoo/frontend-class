@@ -1,4 +1,4 @@
-javascript-study
+frontend-class
 =======
 
 javascript-study
