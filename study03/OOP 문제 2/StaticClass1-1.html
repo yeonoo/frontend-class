@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>컴퓨터 공학과 2011108200 이연우</title></title>
+        <meta charset='utf-8'>
+    <script>
+
+        var StaticClass = function(){};
+
+        StaticClass.print100 = function(){
+            console.log("1부터 100까지 출력합니다");
+            for(i=1; i<=100; i++) {
+                console.log(i);
+            }
+        };
+
+        StaticClass.odd100 = function() {
+            console.log("1부터 100까지의 숫자 중 홀수만 출력합니다.");
+            for(i=1; i<=100; i+=2) {
+                console.log(i);
+            }
+        };
+
+        StaticClass.even100 = function(){
+            console.log("1부터 100까지의 숫자 중 짝수만 출력합니다.");
+            for(var i=2; i<=100; i+=2) {
+                console.log(i);
+            }
+        };
+
+        StaticClass.gugudan = function(){
+            console.log("구구단 출력을 시작합니다.");
+            for(i=2; i<=9; i++) {
+                for(j=1; j<=9; j++) {
+                    console.log(i + " X " + j + " = " + (i*j));
+                }
+                console.log("\n");
+            }
+        };
+
+        StaticClass.print100();
+        console.log("\n");
+        StaticClass.odd100();
+        console.log("\n");
+        StaticClass.even100();
+        console.log("\n");
+        StaticClass.gugudan();
+        
+    </script>
+    </head>
+    <body><h1>기본문제 1을 static 클래스로 구현하기</h1></body>
+</html>
