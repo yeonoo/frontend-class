@@ -1,21 +1,16 @@
-(function(){
-	function Android(options) {
-		Phone.call(this, options);
-			this.model = "GalaxyS5";
-			this.color = options.color;
-			this.release = 2014
+function Android(phoneNum, phoneType){
+	Phone.call(this, phoneNum, phoneType);
+};
+
+Android.prototype = {
+	send : function(name, person, message){
+		Phone.prototype.send.call(name, person, message);
+	},
+
+	receive : function(name, person, message){
+		Phone.prototype.receive.call(name, person, message);
 	}
+};
 
-	Android.prototype = new Phone();
-	Android.prototype.constructor = Android;
-
-	Android.prototype.googleMarket = function() {
-		console.log("구글마켓을 엽니다!");
-	};
-
-	Android.prototype.sNote = function() {
-		console.log("S노트를 엽니다!");
-	};
-
-	window.Android = Android;
-})();
+Android.prototype = new Phone();
+Android.constructor = Android;

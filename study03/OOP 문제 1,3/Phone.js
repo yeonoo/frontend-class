@@ -1,53 +1,24 @@
-(function(){
+function Phone(phoneNum, phoneName, phoneType){
+	this.phoneNum = phoneNum;
+	this.phoneName = phoneName;
+    this.phoneType = phoneType;
+};
 
-	var num = '';
+Phone.prototype = {
+	send : function(name, person, message){
+		console.log("["+name+"] "+person.getName()+"에게 '"+message+"' 메시지를 보냈습니다.");
+		console.log(this.phoneNum+"("+this.phoneName+") -> "+person.getNum()+" : "+ message);
+	},
 
-	function Phone (options){
-		if(!options){
-			options = {
-				model : Android,
-				color : black,
-				year : 2014
-			}
-		}
-		this.model = options.model;
-		this.color : options.color;
-		this.release : options.release;
-	}
+	receive : function(person, name, message){
+		console.log("["+name+"] "+person.getName()+"에게 '"+message+"' 메시지를 받았습니다.");
+	},
 
-	Phone.prototype.boot = function() {
-		console.log("전원을 켭니다.");
-	}
-
-	Phone.prototype.call = function(){
-        	 	if(num === ""){
-			console.log("개통하세요!");
-       		 }
-
-        		else{
-           	 		console.log("전화를 겁니다!");
-        		}
-	};
-
-	Phone.prototype.message = function (){
-		if(num === ""){
-			console.log("개통하세요!");
-		}
-		else{
-			console.log("메시지앱을 엽니다");
-		}
-
-	}
-
-	Phone.prototype.camera = function(){
-        console.log('카메라 켜짐');
-        this.isCamera = true;
-    };
+	getNum : function(){
+		return this.phoneNum;
+	},
     
-    
-	Phone.prototype.setNum = function(userNum){
-        num = userNum;
-	};
-
-	window.Phone = Phone;
-})();
+    getType : function(){
+        return this.phoneType;
+    }
+};
