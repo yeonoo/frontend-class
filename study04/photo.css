@@ -1,0 +1,24 @@
+/* reset */		
+body,div,ul,li,button,h1 {margin:0; padding:0; display:block}
+img {border:0 none}
+ul,li {list-style:none; text-align:center}
+button {vertical-align:middle; border:0 none; background-color:transparent; cursor:pointer}
+body {background:#fff; line-height:1; }
+a {text-decoration:none; color:#666}
+a:active, a:hover {text-decoration:underline}
+
+/* todayPhoto */
+.hide {float: left; display:none}
+#wrap {margin:10px; width:250px; height:269px}
+
+#list {width:250px; float:left;}
+#list li {margin:5px; width:115px; float:left}
+
+#btn {position:relative; z-index:100}
+#page {position:absolute; margin:auto 112px; bottom:2px; z-index:50}
+#prevBtn {margin-left:100px; float:left}
+#nextBtn {margin-left:140px}
+
+.img {border-width:1px; border-style:solid; border-color:#666}
+span {font-family:tahoma, sans-serif; font-size:11px; font-weight:normal; color:#666; }
+h1 {font-family:tahoma, sans-serif; font-size:18px; color:#3f5771; text-align:center}
