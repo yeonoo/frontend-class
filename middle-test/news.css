@@ -1,6 +1,6 @@
 /* reset */		
 body, div, button, h1 {margin:0; padding:0; display:block}
-ul,li{list-style:none}
+ul,li {list-style:none}
 img {border:0 none}
 button {vertical-align:middle; border:1px; background-color:transparent; cursor:pointer}
 body {background:#fff; line-height:2}
