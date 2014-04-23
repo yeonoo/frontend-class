@@ -1,0 +1,14 @@
+/* reset */		
+body, div, button, h1 {margin:0; padding:0; display:block}
+img {border:0 none}
+button {vertical-align:middle; border:0 none; background-color:transparent; cursor:pointer}
+body {background:#fff; line-height:2}
+a {text-decoration:none; color:#666}
+a:active, a:hover {text-decoration:underline}
+
+/* manynews */
+.hide {float:left; display:none}
+#wrap {margin:50px; width:500px}
+.tab {margin:10px;}
+
+span {font-family:tahoma, sans-serif; font-size:15px; font-weight:normal; color:#000}
