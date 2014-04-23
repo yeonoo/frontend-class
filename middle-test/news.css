@@ -1,5 +1,6 @@
 /* reset */		
 body, div, button, h1 {margin:0; padding:0; display:block}
+ul,li{list-style:none}
 img {border:0 none}
 button {vertical-align:middle; border:0 none; background-color:transparent; cursor:pointer}
 body {background:#fff; line-height:2}
@@ -10,11 +11,10 @@ a:active, a:hover {text-decoration:underline}
 .hide {float:left; display:none}
 #wrap {margin:50px; width:500px}
 .tab {margin:10px}
-.nab-tabs {list-style:none}
 span {font-family:tahoma, sans-serif; font-size:15px; font-weight:normal; color:#000}
 
 /* bootstrap */
-.nav-tabs,.nav-pills{*zoom:1;}.nav-tabs:before,.nav-pills:before,.nav-tabs:after,.nav-pills:after{display:table;content:"";line-height:0;}
+.nav-tabs{*zoom:1;}.nav-tabs:before,.nav-pills:before,.nav-tabs:after,.nav-pills:after{display:table;content:"";line-height:0;}
 .nav-tabs:after,.nav-pills:after{clear:both;}
 .nav-tabs>li,.nav-pills>li{float:left;}
 .nav-tabs>li>a,.nav-pills>li>a{padding-right:12px;padding-left:12px;margin-right:2px;line-height:14px;}
