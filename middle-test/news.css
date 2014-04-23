@@ -9,10 +9,11 @@ a:active, a:hover {text-decoration:underline}
 /* manynews */
 .hide {float:left; display:none}
 #wrap {margin:50px; width:500px}
-.tab {margin:10px;}
-
+.tab {margin:10px}
+.nab-tabs {list-style:none}
 span {font-family:tahoma, sans-serif; font-size:15px; font-weight:normal; color:#000}
 
+/* bootstrap */
 .nav-tabs,.nav-pills{*zoom:1;}.nav-tabs:before,.nav-pills:before,.nav-tabs:after,.nav-pills:after{display:table;content:"";line-height:0;}
 .nav-tabs:after,.nav-pills:after{clear:both;}
 .nav-tabs>li,.nav-pills>li{float:left;}
