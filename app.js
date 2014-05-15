@@ -1,9 +1,10 @@
 var API_URL = "http://apis.daum.net/search/web?q= \
 {query}&apikey=81f98f832fab2e5a037d48bf0f92e4402f1a38e0&\
-output=json&callback={callback}&pageno={pageno}";
+output=json&callback={callback}&pageno={pageno}&result=5";
 
 
 var pageno = 1;
+$('#pageno').html(pageno);
 $('#searchForm').on("submit",function(event){
     console.log(1);
     $("#result").empty();
@@ -14,7 +15,7 @@ $('#searchForm').on("submit",function(event){
 
 $('#moreBtn').on("click", function(event){
     pageno++;
-    $('#pageno').val(pageno);
+    $('#pageno').html(pageno);
     pageView();
 });
 
@@ -36,5 +37,4 @@ var pageView = function(){
             $('#result').append("<ul>" + list.join("") + "</ul>");
 		}
 	});
-	return false;
 };
